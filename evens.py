@@ -21,12 +21,12 @@ def even_number_of_evens(numbers):
         
     # Iterate of over each item and if it's an even number, increment the
     # `evens` variable
-    for number in numbers:
-        if number % 2 == 0:
+    for n in numbers:
+        if n % 2 == 0:
             evens += 1
     
     if evens == 0:
-        return False
+        return False #! return false because the remainder of 2 / 0 is 0 (Modula 2 % 0 = 0)
     else:
         return evens % 2 == 0
 
